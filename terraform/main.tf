@@ -53,7 +53,7 @@ resource "aws_cloudwatch_log_group" "postgresql_log_group" {
 resource "aws_cloudwatch_log_subscription_filter" "lambda_subscription_filter" {
   name            = "query"
   log_group_name  = aws_cloudwatch_log_group.postgresql_log_group.name
-  filter_pattern  = "LOG:  AUDIT: OBJECT"
+  filter_pattern  = "OBJECT"
   destination_arn = aws_lambda_function.alert_message_lambda.arn
 }
 
