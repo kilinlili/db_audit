@@ -1,0 +1,11 @@
+{
+  "name": "sns_alert",
+  "version": "1.0.0",
+  "description": "for db audit",
+  "main": "index.js",
+  "author": "kilinlili",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1511.0"
+  }
+}
